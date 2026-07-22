@@ -1,0 +1,30 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Temporary files
+.cache/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+
+# Editor files
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
