@@ -8,10 +8,11 @@ pre: " <b> 6. </b> "
 
 
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Trong suốt thời gian thực tập tại Công ty TNHH Amazon Web Services Viet Nam từ 17/04/2026 đến 30/07/2026, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng những kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+Tôi đã tham gia FCAJ, qua đó cải thiện kỹ năng làm việc nhóm, giao tiếp trong môi trường doanh nghiệp, tư duy giải quyết vấn đề và khả năng thích nghi với quy trình làm việc chuyên nghiệp. Đồng thời, tôi cũng có cơ hội tiếp cận các công nghệ, công cụ và quy trình phát triển phần mềm đang được áp dụng trong doanh nghiệp.
+
+Về tác phong làm việc, tôi luôn cố gắng hoàn thành tốt các nhiệm vụ được giao, chủ động tìm hiểu kiến thức mới, tuân thủ quy trình làm việc của nhóm và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc. Bên cạnh đó, tôi luôn lắng nghe các ý kiến đóng góp từ người hướng dẫn và các thành viên trong nhóm để từng bước hoàn thiện kỹ năng chuyên môn cũng như kỹ năng mềm của bản thân.
 
 Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
@@ -33,6 +34,11 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 
 ### Cần cải thiện
 
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+Qua quá trình thực tập, tôi nhận thấy bản thân vẫn còn một số điểm cần tiếp tục hoàn thiện:
+
+Nâng cao tính kỷ luật, tuân thủ nghiêm túc hơn các quy định, quy trình và thời gian làm việc trong môi trường doanh nghiệp.
+Rèn luyện tư duy phân tích và giải quyết vấn đề để có thể đưa ra các giải pháp hiệu quả hơn trong quá trình làm việc.
+Cải thiện kỹ năng giao tiếp, đặc biệt là khả năng trình bày ý tưởng, trao đổi công việc và xử lý các tình huống phát sinh một cách tự tin, chuyên nghiệp.
+Tiếp tục trau dồi kiến thức chuyên môn và chủ động học hỏi các công nghệ mới để đáp ứng tốt hơn yêu cầu công việc trong tương lai.
+
+Nhìn chung, kỳ thực tập là một trải nghiệm quý báu giúp tôi tích lũy thêm kiến thức, kỹ năng và kinh nghiệm thực tế. Đây sẽ là nền tảng quan trọng để tôi tiếp tục phát triển bản thân và chuẩn bị tốt hơn cho công việc sau khi tốt nghiệp.

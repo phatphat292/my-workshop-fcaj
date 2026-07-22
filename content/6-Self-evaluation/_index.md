@@ -8,12 +8,13 @@ pre: " <b> 6. </b> "
 
 
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at Amazon Web Services Vietnam Co., Ltd. from April 17, 2026 to July 30, 2026, I had the opportunity to learn, develop, and apply the knowledge and skills I acquired at university in a professional working environment.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+I participated in the FCAJ program, which helped me improve my teamwork, communication, problem-solving, and adaptability to a professional workflow. In addition, I gained hands-on experience with technologies, tools, and software development processes that are widely used in the industry.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Regarding my work attitude, I always strived to complete assigned tasks on time and to the best of my ability. I proactively learned new knowledge, followed the team's working processes, and actively communicated with my colleagues to improve work efficiency. Furthermore, I carefully listened to feedback from my mentor and team members, allowing me to continuously enhance both my technical expertise and soft skills.
+
+To provide an objective reflection on my internship experience, I have conducted a self-evaluation based on the following criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
@@ -32,6 +33,11 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+Throughout the internship, I also recognized several areas where I need further improvement:
+
+Strengthen my discipline by adhering more consistently to company policies, working procedures, and schedules.
+Further develop my analytical thinking and problem-solving skills to provide more effective solutions in the workplace.
+Improve my communication skills, particularly in presenting ideas, discussing work-related topics, and handling unexpected situations with greater confidence and professionalism.
+Continue expanding my technical knowledge and proactively learning new technologies to better meet future job requirements.
+
+Overall, this internship was a valuable experience that enabled me to gain practical knowledge, develop essential skills, and acquire real-world working experience. It has provided a strong foundation for my future career development and better prepared me for professional work after graduation.
