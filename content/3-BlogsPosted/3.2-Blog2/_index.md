@@ -37,6 +37,6 @@ As a result, traffic from on-premises can flow through the dedicated connection 
 
 This solution is particularly suitable for enterprises undergoing strong digital transformation, running multiple workloads on AWS, or requiring stable connectivity between traditional data centers and the cloud. I see many companies adopting this model to optimize costs and enhance security for hybrid infrastructure.
 
-![AWS Direct Connect + Transit Gateway Details](/images/3-BlogsPosted/image3.jpeg)
+![AWS Direct Connect + Transit Gateway Details](/my-workshop-fcaj/images/3-BlogsPosted/image3.jpeg)
 
 * **Official Reference:** [AWS Whitepaper: AWS Direct Connect + AWS Transit Gateway](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html)

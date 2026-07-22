@@ -25,7 +25,7 @@ Admin FE ──► POST /api/v1/admin/products/{id}/images/upload
 2. Endpoint có tên `fashion-shop-prod-s3-endpoint` với kiểu `Gateway` và service `com.amazonaws.ap-southeast-1.s3`.
 3. Tại tab **Route tables**, xác nhận endpoint này đã được gắn cả route table public lẫn 2 route table private (do EC2 sử dụng route table private).
 
-![Endpoint](/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/endpoints.png)
+![Endpoint](/my-workshop-fcaj/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/endpoints.png)
 
 #### 2. Kiểm tra S3 Media bucket
 
@@ -33,7 +33,7 @@ Admin FE ──► POST /api/v1/admin/products/{id}/images/upload
 2. Tại tab **Permissions**, mục **Block public access** xác nhận cả 4 tùy chọn đã được bật (bucket hoàn toàn private).
 3. Tại phần **Bucket policy**, chính sách đã được thiết lập để chỉ cho phép principal `cloudfront.amazonaws.com` đọc dữ liệu, đi kèm điều kiện (Condition) khớp với ARN CloudFront distribution của Frontend.
 
-![Bucket policy](/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/policy.png)
+![Bucket policy](/my-workshop-fcaj/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/policy.png)
 
 #### 3. Kiểm tra CloudFront gắn thêm origin `/media/*`
 
@@ -41,8 +41,8 @@ Admin FE ──► POST /api/v1/admin/products/{id}/images/upload
 2. Tại tab **Origins**, cấu hình hiện tại có 3 origin: `s3-site` (FE build), `alb-backend` (API), và `s3-media` (ảnh).
 3. Tại tab **Behaviors**, path pattern `/media/*` đã được trỏ thành công tới origin `s3-media` với cache policy là `CachingOptimized`.
 
-![Origin](/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/origin.png)
-![Behaviors](/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/behaviors.png)
+![Origin](/my-workshop-fcaj/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/origin.png)
+![Behaviors](/my-workshop-fcaj/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/behaviors.png)
 
 #### 4. Test end-to-end: upload ảnh qua trang Admin
 
@@ -53,11 +53,11 @@ Admin FE ──► POST /api/v1/admin/products/{id}/images/upload
 
 Ảnh cũng hiển thị thành công ngoài storefront dành cho người dùng.
 
-![URL_anhup](/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/URL_anhup.png)
+![URL_anhup](/my-workshop-fcaj/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/URL_anhup.png)
 
 #### 5. Đối chiếu: object thật trong S3
 
 1. Quay lại **S3 console** → bucket `fashion-shop-prod-media` → điều hướng theo đường dẫn thư mục `media/products/{id}/`.
 2. File `.jpg`/`.png` vừa upload ở bước 4 nằm gọn trong bucket với key trùng khớp với URL.
 
-![URL_bucket](/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/url_bucket.png)
+![URL_bucket](/my-workshop-fcaj/images/5-Workshop/5.3-S3-Media-Gateway-Endpoint/url_bucket.png)

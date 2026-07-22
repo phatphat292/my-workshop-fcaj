@@ -31,14 +31,14 @@ To verify the security configurations:
 2. Opened the **WAF & Shield console** → **Web ACLs** and selected `maison-edition-prod-waf`.
 3. In the **Rules** tab, all 4 rules were present and correctly ordered by priority: `AWS-CommonRuleSet`, `AWS-SQLiRuleSet`, `AWS-KnownBadInputs`, and `RateLimit`.
 
-![Rules](/images/5-Workshop/5.8-WAF/rule.png)
+![Rules](/my-workshop-fcaj/images/5-Workshop/5.8-WAF/rule.png)
 
 #### 2. Confirm WAF is attached to the right CloudFront distribution
 
 1. Navigated to the **Associated AWS resources** tab on the Web ACL page.
 2. The distribution `E1RFSXKTT3PDNR` (the FE storefront) was found attached.
 
-![Associated AWS resources](/images/5-Workshop/5.8-WAF/associated.png)
+![Associated AWS resources](/my-workshop-fcaj/images/5-Workshop/5.8-WAF/associated.png)
 
 #### 3. Test blocking XSS/SQLi
 
@@ -57,7 +57,7 @@ curl -s -o /dev/null -w 'HTTP=%{http_code}\n' "https://d1tz40a6c8kj4v.cloudfront
 
 The output matched our expectations: the normal request returned HTTP status `200`, while the two malicious patterns returned `403` (effectively blocked by WAF at the edge).
 
-![Curl command results](/images/5-Workshop/5.8-WAF/curl.png)
+![Curl command results](/my-workshop-fcaj/images/5-Workshop/5.8-WAF/curl.png)
 
 #### 4. Inspect the blocked requests in detail (Sampled requests)
 
@@ -66,4 +66,4 @@ To view the logs of the blocked requests:
 2. Waited a few minutes after the test in step 3, then refreshed the page.
 3. The requests just sent showed up marked with **Action = BLOCK** and the name of the rule that blocked them (either `AWS-SQLiRuleSet` or `AWS-CommonRuleSet`).
 
-![Sampled requests](/images/5-Workshop/5.8-WAF/log.png)
+![Sampled requests](/my-workshop-fcaj/images/5-Workshop/5.8-WAF/log.png)

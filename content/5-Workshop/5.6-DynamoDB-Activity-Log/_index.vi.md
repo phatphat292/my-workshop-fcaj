@@ -24,7 +24,7 @@ Bảng được thiết kế với `hash_key = userId`, `range_key = timestamp`,
 2. Tại tab **Overview**, cấu hình Partition key = `userId` (String), Sort key = `timestamp` (String), và Billing mode đang chạy ở dạng `On-demand`.
 3. Tại tab **Additional settings**, phần **Time to Live (TTL)** cho trường `expireAt` đã được thiết lập sang trạng thái `Enabled`.
 
-![Overview](/images/5-Workshop/5.6-DynamoDB-Activity-Log/overview.png)
+![Overview](/my-workshop-fcaj/images/5-Workshop/5.6-DynamoDB-Activity-Log/overview.png)
 
 #### 2. Tạo dữ liệu test
 
@@ -38,7 +38,7 @@ Bảng được thiết kế với `hash_key = userId`, `range_key = timestamp`,
 1. Từ trang chi tiết bảng, nhấp vào **Explore table items**.
 2. Các dòng log có `action` = `VIEW_PRODUCT`, `SEARCH` và `ORDER_CREATED` hiện rõ, ứng với cột `userId` là email vừa dùng ở bước trên.
 
-![Explore](/images/5-Workshop/5.6-DynamoDB-Activity-Log/log.png)
+![Explore](/my-workshop-fcaj/images/5-Workshop/5.6-DynamoDB-Activity-Log/log.png)
 
 #### 4. Xem qua trang Admin (không cần vào AWS Console)
 
@@ -47,7 +47,7 @@ Hệ thống cũng hỗ trợ xem log từ giao diện người dùng:
 2. Chọn đúng email đã test trong danh sách xổ xuống và chọn **Xem**.
 3. Bảng kết quả truy xuất và hiển thị chính xác Thời gian / Hành động / Chi tiết, với dữ liệu mới nhất nằm trên cùng.
 
-![Admin](/images/5-Workshop/5.6-DynamoDB-Activity-Log/admin_log.png)
+![Admin](/my-workshop-fcaj/images/5-Workshop/5.6-DynamoDB-Activity-Log/admin_log.png)
 
 {{% notice note %}}
 Việc ghi log được cấu hình chạy ở dạng **best-effort và bất đồng bộ** (`@Async`). Do đó, nếu DynamoDB gặp sự cố tạm thời, các thao tác chính như xem sản phẩm/tìm kiếm của người dùng vẫn sẽ thành công bình thường; hệ thống chỉ bỏ qua phần ghi log chứ không trả lỗi (throw exception) về phía frontend.

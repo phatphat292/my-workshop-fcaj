@@ -20,7 +20,7 @@ Hệ thống được thiết kế gồm hai lớp:
 CloudFront định tuyến đường dẫn `/api/*` thẳng sang ALB của lớp xử lý. Nhờ vậy trình duyệt luôn chỉ giao tiếp với một origin duy nhất (`d1tz40a6c8kj4v.cloudfront.net`) — giao diện và phần xử lý không bao giờ dính lỗi CORS dù chạy trên các dịch vụ hoàn toàn tách biệt.
 
 Mô hình tổng thể như sau:
-![mohinh](/images/5-Workshop/5.1-Architecture-Overview/mohinh.png)
+![mohinh](/my-workshop-fcaj/images/5-Workshop/5.1-Architecture-Overview/mohinh.png)
 
 #### Cấu hình mạng
 
@@ -32,9 +32,9 @@ Lớp mạng được cấu hình với:
 
 **Kiểm tra Resource Map và EC2 Instances:**
 - Trên VPC console, ở phần **Resource map**, toàn bộ subnet, route table và gateway đều được liên kết đúng.
-![VPC](/images/5-Workshop/5.1-Architecture-Overview/VPC.png)
+![VPC](/my-workshop-fcaj/images/5-Workshop/5.1-Architecture-Overview/VPC.png)
 - Trên EC2 console, mục **Auto Scaling Groups**, `fashion-shop-prod-asg` cho thấy 2 instance đang `InService` (min 2 / desired 2 / max 4, target-tracking theo CPU trung bình 60%), cả 2 đều là target `healthy` trên ALB.
-![ALB](/images/5-Workshop/5.1-Architecture-Overview/ALB.png)
+![ALB](/my-workshop-fcaj/images/5-Workshop/5.1-Architecture-Overview/ALB.png)
 
 #### Danh sách dịch vụ đang chạy
 

@@ -26,7 +26,7 @@ To ensure asynchronous order processing was robust, the queue configurations wer
 1. On the **SQS console**, opened the queue `fashion-shop-prod-order-created`.
 2. In the **Dead-letter queue** tab, confirmed it was configured to point to `fashion-shop-prod-order-dlq` with `Maximum receives = 3`.
 
-![Queue](/images/5-Workshop/5.5-SQS-Lambda-Order/queue.png)
+![Queue](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/queue.png)
 
 #### 2. Inspect the Lambda function
 
@@ -34,15 +34,15 @@ To ensure asynchronous order processing was robust, the queue configurations wer
 2. In the **Configuration → Triggers** tab, the trigger was the `order-created` SQS queue, with a batch size of 10.
 3. In the **Configuration → Environment variables** tab, `SES_SENDER`, `SHOP_NAME`, and `ACTIVITY_LOG_TABLE` were properly set.
 
-![Trigger](/images/5-Workshop/5.5-SQS-Lambda-Order/trigger.png)
-![Environment](/images/5-Workshop/5.5-SQS-Lambda-Order/envi.png)
+![Trigger](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/trigger.png)
+![Environment](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/envi.png)
 
 #### 3. Confirm the sender email is verified in SES
 
 1. On the **SES console** (region `ap-southeast-1`), navigated to **Identities**.
 2. The email address configured in `ses_sender_email` had the status **Verified**.
 
-![SES](/images/5-Workshop/5.5-SQS-Lambda-Order/ses.png)
+![SES](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/ses.png)
 
 #### 4. Real test — place an order
 
@@ -51,14 +51,14 @@ To validate the end-to-end flow:
 2. Added a product to the cart, proceeded to **Checkout**, and placed the order.
 3. Within 10-30 seconds, the inbox showed an "Order confirmation ODxxxxx" email.
 
-![Success](/images/5-Workshop/5.5-SQS-Lambda-Order/success.png)
+![Success](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/success.png)
 
 #### 5. Cross-check the Lambda logs
 
 1. On the **Lambda console** → selected the function → opened the **Monitor** tab → clicked **View CloudWatch logs**.
 2. The latest log stream showed the lines `Processing order ODxxxxx` and `Email sent for order ODxxxxx`, confirming that the Lambda executed correctly.
 
-![Log](/images/5-Workshop/5.5-SQS-Lambda-Order/log.png)
+![Log](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/log.png)
 
 {{% notice tip %}}
 To test the failure/DLQ path without placing a real order, a fake message was pushed into the DLQ as documented in the [CloudWatch + SNS](../5.7-CloudWatch-SNS/) chapter — the same trick used to test the `order-dlq-has-messages` alarm.

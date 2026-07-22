@@ -29,7 +29,7 @@ This project delivers a high-performance, secure, and auto-scaling E-commerce we
 The platform enforces a highly available, fault-tolerant design on AWS, leveraging distinct Public and Private Subnets to completely isolate core data and compute resources from the open internet.
 
 **System Architecture Model**
-![E-commerce System Architecture](/images/2-Proposal/mohinh.png)
+![E-commerce System Architecture](/my-workshop-fcaj/images/2-Proposal/mohinh.png)
 
 #### AWS Services Utilized
 * **AWS WAF & CloudFront:** Edge web security, malicious payload filtering, and global static/dynamic content delivery.

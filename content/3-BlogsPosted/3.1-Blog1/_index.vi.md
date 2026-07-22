@@ -46,7 +46,7 @@ Khi deploy solution này bằng CloudFormation (mặc định), nó sẽ tạo r
 
 > Toàn bộ architecture được thiết kế serverless-friendly, an toàn và scalable.
 
-![Workload Discovery on AWS Architecture](/images/3-BlogsPosted/image1.png)
+![Workload Discovery on AWS Architecture](/my-workshop-fcaj/images/3-BlogsPosted/image1.png)
 
 ---
 

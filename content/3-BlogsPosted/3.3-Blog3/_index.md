@@ -52,6 +52,6 @@ The model is built with the following main components:
 
 Overall, this is an ideal model for enterprises undergoing hybrid transformation, seeking stable private connectivity, high bandwidth, controlled costs, and readiness to scale to multi-account, multi-region architectures in the future.
 
-![AWS DX – DXGW with AWS Transit Gateway Multi-Regions and AWS Public Peering](/images/3-BlogsPosted/image4.png)
+![AWS DX – DXGW with AWS Transit Gateway Multi-Regions and AWS Public Peering](/my-workshop-fcaj/images/3-BlogsPosted/image4.png)
 
 * **Official Reference:** [AWS Whitepaper – Hybrid Connectivity](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/aws-dx-dxgw-with-aws-transit-gateway-multi-regions-and-aws-public-peering.html)

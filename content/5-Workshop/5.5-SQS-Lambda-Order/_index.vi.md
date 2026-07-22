@@ -26,7 +26,7 @@ Gửi lỗi 3 lần liên tiếp ──► message rơi vào Dead Letter Queue (
 1. Trên **SQS console**, mở queue `fashion-shop-prod-order-created`.
 2. Tại tab **Dead-letter queue**, xác nhận queue này đã được cấu hình trỏ tới `fashion-shop-prod-order-dlq` với thông số `Maximum receives = 3`.
 
-![Queue](/images/5-Workshop/5.5-SQS-Lambda-Order/queue.png)
+![Queue](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/queue.png)
 
 #### 2. Kiểm tra Lambda function
 
@@ -34,15 +34,15 @@ Gửi lỗi 3 lần liên tiếp ──► message rơi vào Dead Letter Queue (
 2. Tại tab **Configuration → Triggers**, trigger chính là SQS queue `order-created` với cấu hình batch size là 10.
 3. Tại tab **Configuration → Environment variables**, các biến môi trường cần thiết như `SES_SENDER`, `SHOP_NAME`, và `ACTIVITY_LOG_TABLE` đều đã được thiết lập đúng.
 
-![Trigger](/images/5-Workshop/5.5-SQS-Lambda-Order/trigger.png)
-![Environment](/images/5-Workshop/5.5-SQS-Lambda-Order/envi.png)
+![Trigger](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/trigger.png)
+![Environment](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/envi.png)
 
 #### 3. Kiểm tra SES đã verify email gửi
 
 1. Trên **SES console** (tại đúng region `ap-southeast-1`), vào mục **Identities**.
 2. Địa chỉ email cấu hình trong `ses_sender_email` đã có trạng thái **Verified**.
 
-![SES](/images/5-Workshop/5.5-SQS-Lambda-Order/ses.png)
+![SES](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/ses.png)
 
 #### 4. Test thật — đặt 1 đơn hàng
 
@@ -51,14 +51,14 @@ Gửi lỗi 3 lần liên tiếp ──► message rơi vào Dead Letter Queue (
 2. Thêm sản phẩm vào giỏ → chọn **Thanh toán** → đặt hàng.
 3. Trong vòng 10-30 giây, hộp mail nhận được email với tiêu đề "Xác nhận đơn hàng ODxxxxx".
 
-![Success](/images/5-Workshop/5.5-SQS-Lambda-Order/success.png)
+![Success](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/success.png)
 
 #### 5. Đối chiếu log Lambda
 
 1. Tại **Lambda console** → function → tab **Monitor** → **View CloudWatch logs**.
 2. Log stream mới nhất có các dòng `Processing order ODxxxxx` cùng với `Email sent for order ODxxxxx`. Điều này chứng tỏ Lambda đã được trigger thành công và chạy mượt mà.
 
-![Log](/images/5-Workshop/5.5-SQS-Lambda-Order/log.png)
+![Log](/my-workshop-fcaj/images/5-Workshop/5.5-SQS-Lambda-Order/log.png)
 
 {{% notice tip %}}
 Để test cơ chế lỗi/DLQ mà không cần đặt đơn thật, một message giả được bơm vào DLQ như mô tả ở chương [CloudWatch + SNS](../5.7-CloudWatch-SNS/) — cách đó cũng dùng để kiểm tra alarm `order-dlq-has-messages`.

@@ -47,7 +47,7 @@ When deploying this solution using CloudFormation (default), it creates an envir
 
 > The entire architecture is designed to be serverless-friendly, secure, and scalable.
 
-![Workload Discovery on AWS Architecture](/images/3-BlogsPosted/image1.png)
+![Workload Discovery on AWS Architecture](/my-workshop-fcaj/images/3-BlogsPosted/image1.png)
 
 ---
 

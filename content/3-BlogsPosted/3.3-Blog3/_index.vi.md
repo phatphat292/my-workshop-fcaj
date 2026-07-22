@@ -52,6 +52,6 @@ Mô hình được xây dựng với các thành phần chính sau:
 
 Tổng thể, đây là mô hình lý tưởng cho các doanh nghiệp đang trong giai đoạn hybrid transformation, muốn kết nối private ổn định, băng thông cao, chi phí kiểm soát tốt và sẵn sàng scale lên multi-account, multi-region trong tương lai.
 
-![AWS DX – DXGW with AWS Transit Gateway Multi-Regions and AWS Public Peering](/images/3-BlogsPosted/image4.png)
+![AWS DX – DXGW with AWS Transit Gateway Multi-Regions and AWS Public Peering](/my-workshop-fcaj/images/3-BlogsPosted/image4.png)
 
 * **Nguồn tham khảo chính thức:** [AWS Whitepaper – Hybrid Connectivity](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/aws-dx-dxgw-with-aws-transit-gateway-multi-regions-and-aws-public-peering.html)

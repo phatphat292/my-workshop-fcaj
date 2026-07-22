@@ -24,7 +24,7 @@ To verify the table configuration:
 2. In the **Overview** tab, the Partition key was `userId` (String), the Sort key was `timestamp` (String), and the Billing mode was set to `On-demand`.
 3. In the **Additional settings** tab, under the **Time to Live (TTL)** section, the attribute `expireAt` had a status of `Enabled`.
 
-![Overview](/images/5-Workshop/5.6-DynamoDB-Activity-Log/overview.png)
+![Overview](/my-workshop-fcaj/images/5-Workshop/5.6-DynamoDB-Activity-Log/overview.png)
 
 #### 2. Generate test data
 
@@ -38,7 +38,7 @@ To verify the records were written correctly:
 1. On the table page, clicked **Explore table items**.
 2. Located the rows with `action` = `VIEW_PRODUCT`, `SEARCH`, and `ORDER_CREATED`, all matching the `userId` column for the email used in testing.
 
-![Explore](/images/5-Workshop/5.6-DynamoDB-Activity-Log/log.png)
+![Explore](/my-workshop-fcaj/images/5-Workshop/5.6-DynamoDB-Activity-Log/log.png)
 
 #### 4. View it through the Admin page (no AWS Console needed)
 
@@ -47,7 +47,7 @@ The activity logs are also exposed through the application's admin interface:
 2. Selected the exact email used during testing from the dropdown and clicked **View**.
 3. The result table fetched and displayed the Time / Action / Detail of the test actions, sorting the newest events first.
 
-![Admin](/images/5-Workshop/5.6-DynamoDB-Activity-Log/admin_log.png)
+![Admin](/my-workshop-fcaj/images/5-Workshop/5.6-DynamoDB-Activity-Log/admin_log.png)
 
 {{% notice note %}}
 Logging is implemented as **best-effort and asynchronous** (`@Async`). If DynamoDB is temporarily unavailable, the customer's core requests (like viewing a product or searching) still succeed normally; the log write is simply skipped without bubbling an exception back to the caller.

@@ -20,7 +20,7 @@ The system was designed with two layers:
 CloudFront was configured to route the `/api/*` path straight to the backend's ALB. Because of this, the browser always talks to a single origin (`d1tz40a6c8kj4v.cloudfront.net`) — the frontend and backend never trigger a CORS problem even though they run on completely separate services.
 
 The overall architecture looks like this:
-![mohinh](/images/5-Workshop/5.1-Architecture-Overview/mohinh.png)
+![mohinh](/my-workshop-fcaj/images/5-Workshop/5.1-Architecture-Overview/mohinh.png)
 
 #### Network configuration
 
@@ -32,9 +32,9 @@ The network layer is set up with:
 
 **Inspecting Resource Map and EC2 Instances:**
 - On the VPC console, under **Resource map**, every subnet, route table, and gateway showed the correct connections.
-![VPC](/images/5-Workshop/5.1-Architecture-Overview/VPC.png)
+![VPC](/my-workshop-fcaj/images/5-Workshop/5.1-Architecture-Overview/VPC.png)
 - On the EC2 console, under **Auto Scaling Groups**, `fashion-shop-prod-asg` showed 2 instances `InService` (min 2 / desired 2 / max 4, target-tracking on 60% average CPU), both registered as `healthy` targets on the ALB.
-![ALB](/images/5-Workshop/5.1-Architecture-Overview/ALB.png)
+![ALB](/my-workshop-fcaj/images/5-Workshop/5.1-Architecture-Overview/ALB.png)
 
 #### Services in use
 

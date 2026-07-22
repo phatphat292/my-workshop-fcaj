@@ -22,7 +22,7 @@ To ensure the cache layer was running properly:
 2. Selected `fashion-shop-prod-redis` and confirmed the **Status** was `available` and the **Node type** was `cache.t3.micro`.
 3. Noted the **Primary endpoint**, used for the test below.
 
-![Endpoint](/images/5-Workshop/5.4-ElastiCache-Redis/redis_info.png)
+![Endpoint](/my-workshop-fcaj/images/5-Workshop/5.4-ElastiCache-Redis/redis_info.png)
 
 #### 2. Inspect the Security Group
 
@@ -30,7 +30,7 @@ To check internal security configurations:
 1. From the **Security groups** tab on the cluster page, opened the SG `fashion-shop-prod-redis-sg`.
 2. In the **Inbound rules** tab, confirmed only 1 rule for port `6379`, with the source set strictly to the application's Security Group (not open to `0.0.0.0/0`).
 
-![Redis SG](/images/5-Workshop/5.4-ElastiCache-Redis/sg.png)
+![Redis SG](/my-workshop-fcaj/images/5-Workshop/5.4-ElastiCache-Redis/sg.png)
 
 #### 3. Test the cache — inspect real keys
 
@@ -48,7 +48,7 @@ docker run --rm redis:7-alpine redis-cli \
 
 The shell output successfully listed the expected keys, such as `fashion-shop:productDetail::...` and `fashion-shop:categories::...`.
 
-![redis_key](/images/5-Workshop/5.4-ElastiCache-Redis/redis_key.png)
+![redis_key](/my-workshop-fcaj/images/5-Workshop/5.4-ElastiCache-Redis/redis_key.png)
 
 #### 4. Check the cache-hit metrics in CloudWatch
 
@@ -56,4 +56,4 @@ Finally, to verify cache efficiency:
 1. From the **ElastiCache console**, selected the cluster and opened the **Metrics** tab.
 2. Monitored the **CacheHits** and **CacheMisses** graphs. Refreshing the storefront a few times showed the CacheHits metric climbing accordingly.
 
-![hit](/images/5-Workshop/5.4-ElastiCache-Redis/hit.png)
+![hit](/my-workshop-fcaj/images/5-Workshop/5.4-ElastiCache-Redis/hit.png)

@@ -37,6 +37,6 @@ Kết quả là traffic từ on-premise có thể đi qua dedicated connection r
 
 Giải pháp này đặc biệt phù hợp với các doanh nghiệp đang chuyển đổi số mạnh mẽ, có nhiều workload trên AWS, hoặc cần kết nối ổn định giữa data center truyền thống và cloud. Mình thấy nhiều công ty đã áp dụng mô hình này để tối ưu chi phí và nâng cao security cho hạ tầng hybrid.
 
-![AWS Direct Connect + Transit Gateway Details](/images/3-BlogsPosted/image3.jpeg)
+![AWS Direct Connect + Transit Gateway Details](/my-workshop-fcaj/images/3-BlogsPosted/image3.jpeg)
 
 * **Nguồn tham khảo chính thức:** [AWS Whitepaper: AWS Direct Connect + AWS Transit Gateway](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html)

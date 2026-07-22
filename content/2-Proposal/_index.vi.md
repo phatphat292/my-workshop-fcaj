@@ -30,7 +30,7 @@ Nền tảng áp dụng kiến trúc chuẩn Highly Available & Fault Tolerant t
 
 **Mô hình kiến trúc hệ thống**
 
-![E-commerce System Architecture](/images/2-Proposal/mohinh.png)
+![E-commerce System Architecture](/my-workshop-fcaj/images/2-Proposal/mohinh.png)
 
 #### Dịch vụ AWS sử dụng
 * **AWS WAF & CloudFront:** Lọc mã độc, chống DDoS và phân phối nội dung tĩnh/động toàn cầu.
